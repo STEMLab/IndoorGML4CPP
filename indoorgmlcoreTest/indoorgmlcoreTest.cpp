@@ -17,6 +17,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+using namespace indoorgmlcore;
 
 #import "msxml6.dll" implementation_only no_auto_exclude
 
