@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="Unicode Debug|Win32">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="Unicode Release|Win32">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="Unicode Release|x64">
+      <Configuration>Unicode Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+	<ProjectConfiguration Include="Unicode Debug|x64">
+      <Configuration>Unicode Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B349434-0F9C-BA44-A96D-8BF6AC3A7405}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+	<CharacterSet>NotSet</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<LinkIncremental>true</LinkIncremental>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'" Label="Configuration">
+	<CharacterSet>Unicode</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<LinkIncremental>true</LinkIncremental>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+	<CharacterSet>NotSet</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<WholeProgramOptimization>true</WholeProgramOptimization>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'" Label="Configuration">
+	<CharacterSet>Unicode</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<WholeProgramOptimization>true</WholeProgramOptimization>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+	<CharacterSet>NotSet</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<LinkIncremental>true</LinkIncremental>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'" Label="Configuration">
+	<CharacterSet>Unicode</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<LinkIncremental>true</LinkIncremental>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+	<CharacterSet>NotSet</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<WholeProgramOptimization>true</WholeProgramOptimization>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|x64'" Label="Configuration">
+	<CharacterSet>Unicode</CharacterSet>
+	<UseOfMfc>Dynamic</UseOfMfc>
+	<WholeProgramOptimization>true</WholeProgramOptimization>
+	<ConfigurationType>DynamicLibrary</ConfigurationType>
+	<PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;_DEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;_DEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;_DEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX64</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;_DEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX64</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX64</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Unicode Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;indoorgmlcore_EXPORTS;_CRT_SECURE_NO_WARNINGS;_AFXDLL;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX64</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="indoorgmlcore-typeinfo.h" />
+    <ClInclude Include="indoorgmlcore.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="type_gco.CAbstractObject_Type.h" />
+    <ClInclude Include="type_gco.CAngle_PropertyType.h" />
+    <ClInclude Include="type_gco.CBinary_PropertyType.h" />
+    <ClInclude Include="type_gco.CBinary_Type.h" />
+    <ClInclude Include="type_gco.CBoolean_PropertyType.h" />
+    <ClInclude Include="type_gco.CCharacterString_PropertyType.h" />
+    <ClInclude Include="type_gco.CCodeListValue_Type.h" />
+    <ClInclude Include="type_gco.CDateTime_PropertyType.h" />
+    <ClInclude Include="type_gco.CDate_PropertyType.h" />
+    <ClInclude Include="type_gco.CDate_Type.h" />
+    <ClInclude Include="type_gco.CDecimal_PropertyType.h" />
+    <ClInclude Include="type_gco.CDistance_PropertyType.h" />
+    <ClInclude Include="type_gco.CGenericName_PropertyType.h" />
+    <ClInclude Include="type_gco.CInteger_PropertyType.h" />
+    <ClInclude Include="type_gco.CLength_PropertyType.h" />
+    <ClInclude Include="type_gco.CLocalName_PropertyType.h" />
+    <ClInclude Include="type_gco.CMeasure_PropertyType.h" />
+    <ClInclude Include="type_gco.CMemberName_PropertyType.h" />
+    <ClInclude Include="type_gco.CMemberName_Type.h" />
+    <ClInclude Include="type_gco.CMultiplicityRange_PropertyType.h" />
+    <ClInclude Include="type_gco.CMultiplicityRange_Type.h" />
+    <ClInclude Include="type_gco.CMultiplicity_PropertyType.h" />
+    <ClInclude Include="type_gco.CMultiplicity_Type.h" />
+    <ClInclude Include="type_gco.CNumber_PropertyType.h" />
+    <ClInclude Include="type_gco.CObjectReference_PropertyType.h" />
+    <ClInclude Include="type_gco.CReal_PropertyType.h" />
+    <ClInclude Include="type_gco.CRecordType_PropertyType.h" />
+    <ClInclude Include="type_gco.CRecordType_Type.h" />
+    <ClInclude Include="type_gco.CRecord_PropertyType.h" />
+    <ClInclude Include="type_gco.CScale_PropertyType.h" />
+    <ClInclude Include="type_gco.CScopedName_PropertyType.h" />
+    <ClInclude Include="type_gco.CTypeName_PropertyType.h" />
+    <ClInclude Include="type_gco.CTypeName_Type.h" />
+    <ClInclude Include="type_gco.CUnitOfMeasure_PropertyType.h" />
+    <ClInclude Include="type_gco.CUnlimitedInteger_PropertyType.h" />
+    <ClInclude Include="type_gco.CUnlimitedInteger_Type.h" />
+    <ClInclude Include="type_gco.CUomAngle_PropertyType.h" />
+    <ClInclude Include="type_gco.CUomArea_PropertyType.h" />
+    <ClInclude Include="type_gco.CUomLength_PropertyType.h" />
+    <ClInclude Include="type_gco.CUomScale_PropertyType.h" />
+    <ClInclude Include="type_gco.CUomTime_PropertyType.h" />
+    <ClInclude Include="type_gco.CUomVelocity_PropertyType.h" />
+    <ClInclude Include="type_gco.CUomVolume_PropertyType.h" />
+    <ClInclude Include="type_gco.CDate_TypeType.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_Completeness_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_Element_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_LogicalConsistency_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_PositionalAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_Result_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_TemporalAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDQ_ThematicAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractDS_Aggregate_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractEX_GeographicExtent_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractMD_ContentInformation_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractMD_Identification_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractMD_SpatialRepresentation_Type.h" />
+    <ClInclude Include="type_gmd.CAbstractRS_ReferenceSystem_Type.h" />
+    <ClInclude Include="type_gmd.CCI_Address_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Address_Type.h" />
+    <ClInclude Include="type_gmd.CCI_Citation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Citation_Type.h" />
+    <ClInclude Include="type_gmd.CCI_Contact_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Contact_Type.h" />
+    <ClInclude Include="type_gmd.CCI_DateTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Date_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Date_Type.h" />
+    <ClInclude Include="type_gmd.CCI_OnLineFunctionCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_OnlineResource_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_OnlineResource_Type.h" />
+    <ClInclude Include="type_gmd.CCI_PresentationFormCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_ResponsibleParty_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_ResponsibleParty_Type.h" />
+    <ClInclude Include="type_gmd.CCI_RoleCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Series_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Series_Type.h" />
+    <ClInclude Include="type_gmd.CCI_Telephone_PropertyType.h" />
+    <ClInclude Include="type_gmd.CCI_Telephone_Type.h" />
+    <ClInclude Include="type_gmd.CCountry_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_AbsoluteExternalPositionalAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_AbsoluteExternalPositionalAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_AccuracyOfATimeMeasurement_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_AccuracyOfATimeMeasurement_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_CompletenessCommission_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_CompletenessCommission_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_CompletenessOmission_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_CompletenessOmission_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_Completeness_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_ConceptualConsistency_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_ConceptualConsistency_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_ConformanceResult_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_ConformanceResult_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_DataQuality_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_DataQuality_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_DomainConsistency_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_DomainConsistency_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_Element_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_EvaluationMethodTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_FormatConsistency_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_FormatConsistency_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_GriddedDataPositionalAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_GriddedDataPositionalAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_LogicalConsistency_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_NonQuantitativeAttributeAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_NonQuantitativeAttributeAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_PositionalAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_QuantitativeAttributeAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_QuantitativeAttributeAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_QuantitativeResult_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_QuantitativeResult_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_RelativeInternalPositionalAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_RelativeInternalPositionalAccuracy_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_Result_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_Scope_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_Scope_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_TemporalAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_TemporalConsistency_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_TemporalConsistency_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_TemporalValidity_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_TemporalValidity_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_ThematicAccuracy_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_ThematicClassificationCorrectness_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_ThematicClassificationCorrectness_Type.h" />
+    <ClInclude Include="type_gmd.CDQ_TopologicalConsistency_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDQ_TopologicalConsistency_Type.h" />
+    <ClInclude Include="type_gmd.CDS_Aggregate_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_AssociationTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Association_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Association_Type.h" />
+    <ClInclude Include="type_gmd.CDS_DataSet_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_DataSet_Type.h" />
+    <ClInclude Include="type_gmd.CDS_InitiativeTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Initiative_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Initiative_Type.h" />
+    <ClInclude Include="type_gmd.CDS_OtherAggregate_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_OtherAggregate_Type.h" />
+    <ClInclude Include="type_gmd.CDS_Platform_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Platform_Type.h" />
+    <ClInclude Include="type_gmd.CDS_ProductionSeries_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_ProductionSeries_Type.h" />
+    <ClInclude Include="type_gmd.CDS_Sensor_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Sensor_Type.h" />
+    <ClInclude Include="type_gmd.CDS_Series_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_Series_Type.h" />
+    <ClInclude Include="type_gmd.CDS_StereoMate_PropertyType.h" />
+    <ClInclude Include="type_gmd.CDS_StereoMate_Type.h" />
+    <ClInclude Include="type_gmd.CEX_BoundingPolygon_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_BoundingPolygon_Type.h" />
+    <ClInclude Include="type_gmd.CEX_Extent_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_Extent_Type.h" />
+    <ClInclude Include="type_gmd.CEX_GeographicBoundingBox_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_GeographicBoundingBox_Type.h" />
+    <ClInclude Include="type_gmd.CEX_GeographicDescription_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_GeographicDescription_Type.h" />
+    <ClInclude Include="type_gmd.CEX_GeographicExtent_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_SpatialTemporalExtent_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_SpatialTemporalExtent_Type.h" />
+    <ClInclude Include="type_gmd.CEX_TemporalExtent_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_TemporalExtent_Type.h" />
+    <ClInclude Include="type_gmd.CEX_VerticalExtent_PropertyType.h" />
+    <ClInclude Include="type_gmd.CEX_VerticalExtent_Type.h" />
+    <ClInclude Include="type_gmd.CLI_Lineage_PropertyType.h" />
+    <ClInclude Include="type_gmd.CLI_Lineage_Type.h" />
+    <ClInclude Include="type_gmd.CLI_ProcessStep_PropertyType.h" />
+    <ClInclude Include="type_gmd.CLI_ProcessStep_Type.h" />
+    <ClInclude Include="type_gmd.CLI_Source_PropertyType.h" />
+    <ClInclude Include="type_gmd.CLI_Source_Type.h" />
+    <ClInclude Include="type_gmd.CLanguageCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CLocalisedCharacterString_PropertyType.h" />
+    <ClInclude Include="type_gmd.CLocalisedCharacterString_Type.h" />
+    <ClInclude Include="type_gmd.CMD_AggregateInformation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_AggregateInformation_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ApplicationSchemaInformation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ApplicationSchemaInformation_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Band_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Band_Type.h" />
+    <ClInclude Include="type_gmd.CMD_BrowseGraphic_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_BrowseGraphic_Type.h" />
+    <ClInclude Include="type_gmd.CMD_CellGeometryCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_CharacterSetCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ClassificationCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Constraints_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Constraints_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ContentInformation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_CoverageContentTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_CoverageDescription_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_CoverageDescription_Type.h" />
+    <ClInclude Include="type_gmd.CMD_DataIdentification_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_DataIdentification_Type.h" />
+    <ClInclude Include="type_gmd.CMD_DatatypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_DigitalTransferOptions_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_DigitalTransferOptions_Type.h" />
+    <ClInclude Include="type_gmd.CMD_DimensionNameTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Dimension_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Dimension_Type.h" />
+    <ClInclude Include="type_gmd.CMD_DistributionUnits_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Distribution_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Distribution_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Distributor_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Distributor_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ExtendedElementInformation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ExtendedElementInformation_Type.h" />
+    <ClInclude Include="type_gmd.CMD_FeatureCatalogueDescription_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_FeatureCatalogueDescription_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Format_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Format_Type.h" />
+    <ClInclude Include="type_gmd.CMD_GeometricObjectTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_GeometricObjects_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_GeometricObjects_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Georectified_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Georectified_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Georeferenceable_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Georeferenceable_Type.h" />
+    <ClInclude Include="type_gmd.CMD_GridSpatialRepresentation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_GridSpatialRepresentation_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Identification_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Identifier_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Identifier_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ImageDescription_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ImageDescription_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ImagingConditionCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_KeywordTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Keywords_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Keywords_Type.h" />
+    <ClInclude Include="type_gmd.CMD_LegalConstraints_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_LegalConstraints_Type.h" />
+    <ClInclude Include="type_gmd.CMD_MaintenanceFrequencyCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_MaintenanceInformation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_MaintenanceInformation_Type.h" />
+    <ClInclude Include="type_gmd.CMD_MediumFormatCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_MediumNameCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Medium_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Medium_Type.h" />
+    <ClInclude Include="type_gmd.CMD_MetadataExtensionInformation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_MetadataExtensionInformation_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Metadata_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Metadata_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ObligationCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ObligationCode_Type.h" />
+    <ClInclude Include="type_gmd.CMD_PixelOrientationCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_PixelOrientationCode_Type.h" />
+    <ClInclude Include="type_gmd.CMD_PortrayalCatalogueReference_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_PortrayalCatalogueReference_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ProgressCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_RangeDimension_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_RangeDimension_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ReferenceSystem_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ReferenceSystem_Type.h" />
+    <ClInclude Include="type_gmd.CMD_RepresentativeFraction_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_RepresentativeFraction_Type.h" />
+    <ClInclude Include="type_gmd.CMD_Resolution_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Resolution_Type.h" />
+    <ClInclude Include="type_gmd.CMD_RestrictionCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ScopeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ScopeDescription_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ScopeDescription_Type.h" />
+    <ClInclude Include="type_gmd.CMD_SecurityConstraints_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_SecurityConstraints_Type.h" />
+    <ClInclude Include="type_gmd.CMD_ServiceIdentification_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ServiceIdentification_Type.h" />
+    <ClInclude Include="type_gmd.CMD_SpatialRepresentationTypeCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_SpatialRepresentation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_StandardOrderProcess_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_StandardOrderProcess_Type.h" />
+    <ClInclude Include="type_gmd.CMD_TopicCategoryCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_TopicCategoryCode_Type.h" />
+    <ClInclude Include="type_gmd.CMD_TopologyLevelCode_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Usage_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_Usage_Type.h" />
+    <ClInclude Include="type_gmd.CMD_VectorSpatialRepresentation_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_VectorSpatialRepresentation_Type.h" />
+    <ClInclude Include="type_gmd.CPT_FreeText_PropertyType.h" />
+    <ClInclude Include="type_gmd.CPT_FreeText_Type.h" />
+    <ClInclude Include="type_gmd.CPT_LocaleContainer_PropertyType.h" />
+    <ClInclude Include="type_gmd.CPT_LocaleContainer_Type.h" />
+    <ClInclude Include="type_gmd.CPT_Locale_PropertyType.h" />
+    <ClInclude Include="type_gmd.CPT_Locale_Type.h" />
+    <ClInclude Include="type_gmd.CRS_Identifier_PropertyType.h" />
+    <ClInclude Include="type_gmd.CRS_Identifier_Type.h" />
+    <ClInclude Include="type_gmd.CRS_ReferenceSystem_PropertyType.h" />
+    <ClInclude Include="type_gmd.CURL_PropertyType.h" />
+    <ClInclude Include="type_gmd.CMD_ObligationCode_TypeType.h" />
+    <ClInclude Include="type_gmd.CMD_PixelOrientationCode_TypeType.h" />
+    <ClInclude Include="type_gmd.CMD_TopicCategoryCode_TypeType.h" />
+    <ClInclude Include="type_gsr.CSC_CRS_PropertyType.h" />
+    <ClInclude Include="type_gss.CGM_Object_PropertyType.h" />
+    <ClInclude Include="type_gss.CGM_Point_PropertyType.h" />
+    <ClInclude Include="type_gts.CTM_PeriodDuration_PropertyType.h" />
+    <ClInclude Include="type_gts.CTM_Primitive_PropertyType.h" />
+    <ClInclude Include="type_gml.CAbstractCRSType.h" />
+    <ClInclude Include="type_gml.CAbstractContinuousCoverageType.h" />
+    <ClInclude Include="type_gml.CAbstractCoordinateOperationType.h" />
+    <ClInclude Include="type_gml.CAbstractCoordinateSystemType.h" />
+    <ClInclude Include="type_gml.CAbstractCoverageType.h" />
+    <ClInclude Include="type_gml.CAbstractCurveSegmentType.h" />
+    <ClInclude Include="type_gml.CAbstractCurveType.h" />
+    <ClInclude Include="type_gml.CAbstractDatumType.h" />
+    <ClInclude Include="type_gml.CAbstractFeatureCollectionType.h" />
+    <ClInclude Include="type_gml.CAbstractFeatureMemberType.h" />
+    <ClInclude Include="type_gml.CAbstractFeatureType.h" />
+    <ClInclude Include="type_gml.CAbstractGMLType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralConversionType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralDerivedCRSType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralOperationParameterPropertyType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralOperationParameterType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralParameterValuePropertyType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralParameterValueType.h" />
+    <ClInclude Include="type_gml.CAbstractGeneralTransformationType.h" />
+    <ClInclude Include="type_gml.CAbstractGeometricAggregateType.h" />
+    <ClInclude Include="type_gml.CAbstractGeometricPrimitiveType.h" />
+    <ClInclude Include="type_gml.CAbstractGeometryType.h" />
+    <ClInclude Include="type_gml.CAbstractGriddedSurfaceType.h" />
+    <ClInclude Include="type_gml.CAbstractMemberType.h" />
+    <ClInclude Include="type_gml.CAbstractMetaDataType.h" />
+    <ClInclude Include="type_gml.CAbstractMetadataPropertyType.h" />
+    <ClInclude Include="type_gml.CAbstractParametricCurveSurfaceType.h" />
+    <ClInclude Include="type_gml.CAbstractRingPropertyType.h" />
+    <ClInclude Include="type_gml.CAbstractRingType.h" />
+    <ClInclude Include="type_gml.CAbstractSolidType.h" />
+    <ClInclude Include="type_gml.CAbstractSurfacePatchType.h" />
+    <ClInclude Include="type_gml.CAbstractSurfaceType.h" />
+    <ClInclude Include="type_gml.CAbstractTimeComplexType.h" />
+    <ClInclude Include="type_gml.CAbstractTimeGeometricPrimitiveType.h" />
+    <ClInclude Include="type_gml.CAbstractTimeObjectType.h" />
+    <ClInclude Include="type_gml.CAbstractTimePrimitiveType.h" />
+    <ClInclude Include="type_gml.CAbstractTimeSliceType.h" />
+    <ClInclude Include="type_gml.CAbstractTimeTopologyPrimitiveType.h" />
+    <ClInclude Include="type_gml.CAbstractTopoPrimitiveType.h" />
+    <ClInclude Include="type_gml.CAbstractTopologyType.h" />
+    <ClInclude Include="type_gml.CAffineCSPropertyType.h" />
+    <ClInclude Include="type_gml.CAffineCSType.h" />
+    <ClInclude Include="type_gml.CAffinePlacementType.h" />
+    <ClInclude Include="type_gml.CAggregationType.h" />
+    <ClInclude Include="type_gml.CAngleChoiceType.h" />
+    <ClInclude Include="type_gml.CAngleType.h" />
+    <ClInclude Include="type_gml.CArcByBulgeType.h" />
+    <ClInclude Include="type_gml.CArcByCenterPointType.h" />
+    <ClInclude Include="type_gml.CArcMinutesType.h" />
+    <ClInclude Include="type_gml.CArcSecondsType.h" />
+    <ClInclude Include="type_gml.CArcStringByBulgeType.h" />
+    <ClInclude Include="type_gml.CArcStringType.h" />
+    <ClInclude Include="type_gml.CArcType.h" />
+    <ClInclude Include="type_gml.CAreaType.h" />
+    <ClInclude Include="type_gml.CArrayAssociationType.h" />
+    <ClInclude Include="type_gml.CArrayType.h" />
+    <ClInclude Include="type_gml.CAssociationRoleType.h" />
+    <ClInclude Include="type_gml.CAxisDirection.h" />
+    <ClInclude Include="type_gml.CAxisDirectionList.h" />
+    <ClInclude Include="type_gml.CBSplineType.h" />
+    <ClInclude Include="type_gml.CBagType.h" />
+    <ClInclude Include="type_gml.CBaseUnitType.h" />
+    <ClInclude Include="type_gml.CBezierType.h" />
+    <ClInclude Include="type_gml.CBooleanPropertyType.h" />
+    <ClInclude Include="type_gml.CBoundedFeatureType.h" />
+    <ClInclude Include="type_gml.CBoundingShapeType.h" />
+    <ClInclude Include="type_gml.CCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CCalDate.h" />
+    <ClInclude Include="type_gml.CCartesianCSPropertyType.h" />
+    <ClInclude Include="type_gml.CCartesianCSType.h" />
+    <ClInclude Include="type_gml.CCategoryExtentType.h" />
+    <ClInclude Include="type_gml.CCategoryPropertyType.h" />
+    <ClInclude Include="type_gml.CCircleByCenterPointType.h" />
+    <ClInclude Include="type_gml.CCircleType.h" />
+    <ClInclude Include="type_gml.CClothoidType.h" />
+    <ClInclude Include="type_gml.CCodeListType.h" />
+    <ClInclude Include="type_gml.CCodeOrNilReasonListType.h" />
+    <ClInclude Include="type_gml.CCodeType.h" />
+    <ClInclude Include="type_gml.CCodeWithAuthorityType.h" />
+    <ClInclude Include="type_gml.CCompassPointEnumeration.h" />
+    <ClInclude Include="type_gml.CCompositeCurveType.h" />
+    <ClInclude Include="type_gml.CCompositeSolidType.h" />
+    <ClInclude Include="type_gml.CCompositeSurfaceType.h" />
+    <ClInclude Include="type_gml.CCompositeValueType.h" />
+    <ClInclude Include="type_gml.CCompoundCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CCompoundCRSType.h" />
+    <ClInclude Include="type_gml.CConcatenatedOperationPropertyType.h" />
+    <ClInclude Include="type_gml.CConcatenatedOperationType.h" />
+    <ClInclude Include="type_gml.CConeType.h" />
+    <ClInclude Include="type_gml.CConventionalUnitType.h" />
+    <ClInclude Include="type_gml.CConversionPropertyType.h" />
+    <ClInclude Include="type_gml.CConversionToPreferredUnitType.h" />
+    <ClInclude Include="type_gml.CConversionType.h" />
+    <ClInclude Include="type_gml.CCoordinateOperationPropertyType.h" />
+    <ClInclude Include="type_gml.CCoordinateSystemAxisPropertyType.h" />
+    <ClInclude Include="type_gml.CCoordinateSystemAxisType.h" />
+    <ClInclude Include="type_gml.CCoordinateSystemPropertyType.h" />
+    <ClInclude Include="type_gml.CCoordinatesType.h" />
+    <ClInclude Include="type_gml.CCountExtentType.h" />
+    <ClInclude Include="type_gml.CCountPropertyType.h" />
+    <ClInclude Include="type_gml.CCoverageFunctionType.h" />
+    <ClInclude Include="type_gml.CCubicSplineType.h" />
+    <ClInclude Include="type_gml.CCurveArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CCurveInterpolationType.h" />
+    <ClInclude Include="type_gml.CCurvePropertyType.h" />
+    <ClInclude Include="type_gml.CCurveSegmentArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CCurveType.h" />
+    <ClInclude Include="type_gml.CCylinderType.h" />
+    <ClInclude Include="type_gml.CCylindricalCSPropertyType.h" />
+    <ClInclude Include="type_gml.CCylindricalCSType.h" />
+    <ClInclude Include="type_gml.CDMSAngleType.h" />
+    <ClInclude Include="type_gml.CDataBlockType.h" />
+    <ClInclude Include="type_gml.CDatumPropertyType.h" />
+    <ClInclude Include="type_gml.CDecimalMinutesType.h" />
+    <ClInclude Include="type_gml.CDefinitionBaseType.h" />
+    <ClInclude Include="type_gml.CDefinitionProxyType.h" />
+    <ClInclude Include="type_gml.CDefinitionType.h" />
+    <ClInclude Include="type_gml.CDegreeValueType.h" />
+    <ClInclude Include="type_gml.CDegreesType.h" />
+    <ClInclude Include="type_gml.CDerivationUnitTermType.h" />
+    <ClInclude Include="type_gml.CDerivedCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CDerivedCRSType.h" />
+    <ClInclude Include="type_gml.CDerivedUnitType.h" />
+    <ClInclude Include="type_gml.CDictionaryEntryType.h" />
+    <ClInclude Include="type_gml.CDictionaryType.h" />
+    <ClInclude Include="type_gml.CDirectPositionListType.h" />
+    <ClInclude Include="type_gml.CDirectPositionType.h" />
+    <ClInclude Include="type_gml.CDirectedEdgePropertyType.h" />
+    <ClInclude Include="type_gml.CDirectedFacePropertyType.h" />
+    <ClInclude Include="type_gml.CDirectedNodePropertyType.h" />
+    <ClInclude Include="type_gml.CDirectedObservationAtDistanceType.h" />
+    <ClInclude Include="type_gml.CDirectedObservationType.h" />
+    <ClInclude Include="type_gml.CDirectedTopoSolidPropertyType.h" />
+    <ClInclude Include="type_gml.CDirectionDescriptionType.h" />
+    <ClInclude Include="type_gml.CDirectionPropertyType.h" />
+    <ClInclude Include="type_gml.CDirectionVectorType.h" />
+    <ClInclude Include="type_gml.CDiscreteCoverageType.h" />
+    <ClInclude Include="type_gml.CDomainSetType.h" />
+    <ClInclude Include="type_gml.CDynamicFeatureCollectionType.h" />
+    <ClInclude Include="type_gml.CDynamicFeatureMemberType.h" />
+    <ClInclude Include="type_gml.CDynamicFeatureType.h" />
+    <ClInclude Include="type_gml.CEdgeType.h" />
+    <ClInclude Include="type_gml.CEllipsoidPropertyType.h" />
+    <ClInclude Include="type_gml.CEllipsoidType.h" />
+    <ClInclude Include="type_gml.CEllipsoidalCSPropertyType.h" />
+    <ClInclude Include="type_gml.CEllipsoidalCSType.h" />
+    <ClInclude Include="type_gml.CEngineeringCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CEngineeringCRSType.h" />
+    <ClInclude Include="type_gml.CEngineeringDatumPropertyType.h" />
+    <ClInclude Include="type_gml.CEngineeringDatumType.h" />
+    <ClInclude Include="type_gml.CEnvelopeType.h" />
+    <ClInclude Include="type_gml.CEnvelopeWithTimePeriodType.h" />
+    <ClInclude Include="type_gml.CFaceOrTopoSolidPropertyType.h" />
+    <ClInclude Include="type_gml.CFaceType.h" />
+    <ClInclude Include="type_gml.CFeatureArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CFeatureCollectionType.h" />
+    <ClInclude Include="type_gml.CFeaturePropertyType.h" />
+    <ClInclude Include="type_gml.CFileType.h" />
+    <ClInclude Include="type_gml.CFormulaType.h" />
+    <ClInclude Include="type_gml.CGeneralConversionPropertyType.h" />
+    <ClInclude Include="type_gml.CGeneralTransformationPropertyType.h" />
+    <ClInclude Include="type_gml.CGenericMetaDataType.h" />
+    <ClInclude Include="type_gml.CGeocentricCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CGeocentricCRSType.h" />
+    <ClInclude Include="type_gml.CGeodesicStringType.h" />
+    <ClInclude Include="type_gml.CGeodesicType.h" />
+    <ClInclude Include="type_gml.CGeodeticCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CGeodeticCRSType.h" />
+    <ClInclude Include="type_gml.CGeodeticDatumPropertyType.h" />
+    <ClInclude Include="type_gml.CGeodeticDatumType.h" />
+    <ClInclude Include="type_gml.CGeographicCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CGeographicCRSType.h" />
+    <ClInclude Include="type_gml.CGeometricComplexPropertyType.h" />
+    <ClInclude Include="type_gml.CGeometricComplexType.h" />
+    <ClInclude Include="type_gml.CGeometricPrimitivePropertyType.h" />
+    <ClInclude Include="type_gml.CGeometryArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CGeometryPropertyType.h" />
+    <ClInclude Include="type_gml.CGridEnvelopeType.h" />
+    <ClInclude Include="type_gml.CGridFunctionType.h" />
+    <ClInclude Include="type_gml.CGridLengthType.h" />
+    <ClInclude Include="type_gml.CGridLimitsType.h" />
+    <ClInclude Include="type_gml.CGridType.h" />
+    <ClInclude Include="type_gml.CHistoryPropertyType.h" />
+    <ClInclude Include="type_gml.CIdentifiedObjectType.h" />
+    <ClInclude Include="type_gml.CImageCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CImageCRSType.h" />
+    <ClInclude Include="type_gml.CImageDatumPropertyType.h" />
+    <ClInclude Include="type_gml.CImageDatumType.h" />
+    <ClInclude Include="type_gml.CIncrementOrder.h" />
+    <ClInclude Include="type_gml.CIndirectEntryType.h" />
+    <ClInclude Include="type_gml.CInlinePropertyType.h" />
+    <ClInclude Include="type_gml.CKnotPropertyType.h" />
+    <ClInclude Include="type_gml.CKnotType.h" />
+    <ClInclude Include="type_gml.CKnotTypesType.h" />
+    <ClInclude Include="type_gml.CLengthType.h" />
+    <ClInclude Include="type_gml.CLineStringSegmentArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CLineStringSegmentType.h" />
+    <ClInclude Include="type_gml.CLineStringType.h" />
+    <ClInclude Include="type_gml.CLinearCSPropertyType.h" />
+    <ClInclude Include="type_gml.CLinearCSType.h" />
+    <ClInclude Include="type_gml.CLinearRingPropertyType.h" />
+    <ClInclude Include="type_gml.CLinearRingType.h" />
+    <ClInclude Include="type_gml.CLocationPropertyType.h" />
+    <ClInclude Include="type_gml.CMappingRuleType.h" />
+    <ClInclude Include="type_gml.CMeasureListType.h" />
+    <ClInclude Include="type_gml.CMeasureOrNilReasonListType.h" />
+    <ClInclude Include="type_gml.CMeasureType.h" />
+    <ClInclude Include="type_gml.CMetaDataPropertyType.h" />
+    <ClInclude Include="type_gml.CMovingObjectStatusType.h" />
+    <ClInclude Include="type_gml.CMultiCurvePropertyType.h" />
+    <ClInclude Include="type_gml.CMultiCurveType.h" />
+    <ClInclude Include="type_gml.CMultiGeometryPropertyType.h" />
+    <ClInclude Include="type_gml.CMultiGeometryType.h" />
+    <ClInclude Include="type_gml.CMultiPointPropertyType.h" />
+    <ClInclude Include="type_gml.CMultiPointType.h" />
+    <ClInclude Include="type_gml.CMultiSolidPropertyType.h" />
+    <ClInclude Include="type_gml.CMultiSolidType.h" />
+    <ClInclude Include="type_gml.CMultiSurfacePropertyType.h" />
+    <ClInclude Include="type_gml.CMultiSurfaceType.h" />
+    <ClInclude Include="type_gml.CNCNameList.h" />
+    <ClInclude Include="type_gml.CNameList.h" />
+    <ClInclude Include="type_gml.CNameOrNilReason.h" />
+    <ClInclude Include="type_gml.CNameOrNilReasonList.h" />
+    <ClInclude Include="type_gml.CNilReasonEnumeration.h" />
+    <ClInclude Include="type_gml.CNilReasonType.h" />
+    <ClInclude Include="type_gml.CNodeOrEdgePropertyType.h" />
+    <ClInclude Include="type_gml.CNodePropertyType.h" />
+    <ClInclude Include="type_gml.CNodeType.h" />
+    <ClInclude Include="type_gml.CObliqueCartesianCSPropertyType.h" />
+    <ClInclude Include="type_gml.CObliqueCartesianCSType.h" />
+    <ClInclude Include="type_gml.CObservationType.h" />
+    <ClInclude Include="type_gml.COffsetCurveType.h" />
+    <ClInclude Include="type_gml.COperationMethodPropertyType.h" />
+    <ClInclude Include="type_gml.COperationMethodType.h" />
+    <ClInclude Include="type_gml.COperationParameterGroupPropertyType.h" />
+    <ClInclude Include="type_gml.COperationParameterGroupType.h" />
+    <ClInclude Include="type_gml.COperationParameterPropertyType.h" />
+    <ClInclude Include="type_gml.COperationParameterType.h" />
+    <ClInclude Include="type_gml.COperationPropertyType.h" />
+    <ClInclude Include="type_gml.COrientableCurveType.h" />
+    <ClInclude Include="type_gml.COrientableSurfaceType.h" />
+    <ClInclude Include="type_gml.CParameterValueGroupType.h" />
+    <ClInclude Include="type_gml.CParameterValueType.h" />
+    <ClInclude Include="type_gml.CPassThroughOperationPropertyType.h" />
+    <ClInclude Include="type_gml.CPassThroughOperationType.h" />
+    <ClInclude Include="type_gml.CPointArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CPointPropertyType.h" />
+    <ClInclude Include="type_gml.CPointType.h" />
+    <ClInclude Include="type_gml.CPolarCSPropertyType.h" />
+    <ClInclude Include="type_gml.CPolarCSType.h" />
+    <ClInclude Include="type_gml.CPolygonPatchType.h" />
+    <ClInclude Include="type_gml.CPolygonType.h" />
+    <ClInclude Include="type_gml.CPrimeMeridianPropertyType.h" />
+    <ClInclude Include="type_gml.CPrimeMeridianType.h" />
+    <ClInclude Include="type_gml.CPriorityLocationPropertyType.h" />
+    <ClInclude Include="type_gml.CProcedurePropertyType.h" />
+    <ClInclude Include="type_gml.CProjectedCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CProjectedCRSType.h" />
+    <ClInclude Include="type_gml.CQNameList.h" />
+    <ClInclude Include="type_gml.CQuantityExtentType.h" />
+    <ClInclude Include="type_gml.CQuantityPropertyType.h" />
+    <ClInclude Include="type_gml.CRangeSetType.h" />
+    <ClInclude Include="type_gml.CRectangleType.h" />
+    <ClInclude Include="type_gml.CRectifiedGridType.h" />
+    <ClInclude Include="type_gml.CReferenceType.h" />
+    <ClInclude Include="type_gml.CRelatedTimeType.h" />
+    <ClInclude Include="type_gml.CResultType.h" />
+    <ClInclude Include="type_gml.CRingPropertyType.h" />
+    <ClInclude Include="type_gml.CRingType.h" />
+    <ClInclude Include="type_gml.CScaleType.h" />
+    <ClInclude Include="type_gml.CSequenceRuleEnumeration.h" />
+    <ClInclude Include="type_gml.CSequenceRuleType.h" />
+    <ClInclude Include="type_gml.CShellPropertyType.h" />
+    <ClInclude Include="type_gml.CShellType.h" />
+    <ClInclude Include="type_gml.CSignType.h" />
+    <ClInclude Include="type_gml.CSingleCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CSingleOperationPropertyType.h" />
+    <ClInclude Include="type_gml.CSolidArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CSolidPropertyType.h" />
+    <ClInclude Include="type_gml.CSolidType.h" />
+    <ClInclude Include="type_gml.CSpeedType.h" />
+    <ClInclude Include="type_gml.CSphereType.h" />
+    <ClInclude Include="type_gml.CSphericalCSPropertyType.h" />
+    <ClInclude Include="type_gml.CSphericalCSType.h" />
+    <ClInclude Include="type_gml.CStringOrRefType.h" />
+    <ClInclude Include="type_gml.CSuccessionType.h" />
+    <ClInclude Include="type_gml.CSurfaceArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CSurfaceInterpolationType.h" />
+    <ClInclude Include="type_gml.CSurfacePatchArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CSurfacePropertyType.h" />
+    <ClInclude Include="type_gml.CSurfaceType.h" />
+    <ClInclude Include="type_gml.CTargetPropertyType.h" />
+    <ClInclude Include="type_gml.CTemporalCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CTemporalCRSType.h" />
+    <ClInclude Include="type_gml.CTemporalCSPropertyType.h" />
+    <ClInclude Include="type_gml.CTemporalCSType.h" />
+    <ClInclude Include="type_gml.CTemporalDatumBaseType.h" />
+    <ClInclude Include="type_gml.CTemporalDatumPropertyType.h" />
+    <ClInclude Include="type_gml.CTemporalDatumType.h" />
+    <ClInclude Include="type_gml.CTimeCSPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeCSType.h" />
+    <ClInclude Include="type_gml.CTimeCalendarEraPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeCalendarEraType.h" />
+    <ClInclude Include="type_gml.CTimeCalendarPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeCalendarType.h" />
+    <ClInclude Include="type_gml.CTimeClockPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeClockType.h" />
+    <ClInclude Include="type_gml.CTimeCoordinateSystemType.h" />
+    <ClInclude Include="type_gml.CTimeEdgePropertyType.h" />
+    <ClInclude Include="type_gml.CTimeEdgeType.h" />
+    <ClInclude Include="type_gml.CTimeIndeterminateValueType.h" />
+    <ClInclude Include="type_gml.CTimeInstantPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeInstantType.h" />
+    <ClInclude Include="type_gml.CTimeIntervalLengthType.h" />
+    <ClInclude Include="type_gml.CTimeNodePropertyType.h" />
+    <ClInclude Include="type_gml.CTimeNodeType.h" />
+    <ClInclude Include="type_gml.CTimeOrdinalEraPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeOrdinalEraType.h" />
+    <ClInclude Include="type_gml.CTimeOrdinalReferenceSystemType.h" />
+    <ClInclude Include="type_gml.CTimePeriodPropertyType.h" />
+    <ClInclude Include="type_gml.CTimePeriodType.h" />
+    <ClInclude Include="type_gml.CTimePositionType.h" />
+    <ClInclude Include="type_gml.CTimePositionUnion.h" />
+    <ClInclude Include="type_gml.CTimePrimitivePropertyType.h" />
+    <ClInclude Include="type_gml.CTimeReferenceSystemType.h" />
+    <ClInclude Include="type_gml.CTimeTopologyComplexPropertyType.h" />
+    <ClInclude Include="type_gml.CTimeTopologyComplexType.h" />
+    <ClInclude Include="type_gml.CTimeTopologyPrimitivePropertyType.h" />
+    <ClInclude Include="type_gml.CTimeType.h" />
+    <ClInclude Include="type_gml.CTimeUnitType.h" />
+    <ClInclude Include="type_gml.CTinType.h" />
+    <ClInclude Include="type_gml.CTopoComplexPropertyType.h" />
+    <ClInclude Include="type_gml.CTopoComplexType.h" />
+    <ClInclude Include="type_gml.CTopoCurvePropertyType.h" />
+    <ClInclude Include="type_gml.CTopoCurveType.h" />
+    <ClInclude Include="type_gml.CTopoPointPropertyType.h" />
+    <ClInclude Include="type_gml.CTopoPointType.h" />
+    <ClInclude Include="type_gml.CTopoPrimitiveArrayAssociationType.h" />
+    <ClInclude Include="type_gml.CTopoPrimitiveMemberType.h" />
+    <ClInclude Include="type_gml.CTopoSolidPropertyType.h" />
+    <ClInclude Include="type_gml.CTopoSolidType.h" />
+    <ClInclude Include="type_gml.CTopoSurfacePropertyType.h" />
+    <ClInclude Include="type_gml.CTopoSurfaceType.h" />
+    <ClInclude Include="type_gml.CTopoVolumePropertyType.h" />
+    <ClInclude Include="type_gml.CTopoVolumeType.h" />
+    <ClInclude Include="type_gml.CTransformationPropertyType.h" />
+    <ClInclude Include="type_gml.CTransformationType.h" />
+    <ClInclude Include="type_gml.CTriangleType.h" />
+    <ClInclude Include="type_gml.CUnitDefinitionType.h" />
+    <ClInclude Include="type_gml.CUnitOfMeasureType.h" />
+    <ClInclude Include="type_gml.CUomIdentifier.h" />
+    <ClInclude Include="type_gml.CUomSymbol.h" />
+    <ClInclude Include="type_gml.CUomURI.h" />
+    <ClInclude Include="type_gml.CUserDefinedCSPropertyType.h" />
+    <ClInclude Include="type_gml.CUserDefinedCSType.h" />
+    <ClInclude Include="type_gml.CValueArrayPropertyType.h" />
+    <ClInclude Include="type_gml.CValueArrayType.h" />
+    <ClInclude Include="type_gml.CValuePropertyType.h" />
+    <ClInclude Include="type_gml.CVectorType.h" />
+    <ClInclude Include="type_gml.CVerticalCRSPropertyType.h" />
+    <ClInclude Include="type_gml.CVerticalCRSType.h" />
+    <ClInclude Include="type_gml.CVerticalCSPropertyType.h" />
+    <ClInclude Include="type_gml.CVerticalCSType.h" />
+    <ClInclude Include="type_gml.CVerticalDatumPropertyType.h" />
+    <ClInclude Include="type_gml.CVerticalDatumType.h" />
+    <ClInclude Include="type_gml.CVolumeType.h" />
+    <ClInclude Include="type_gml.CbooleanList.h" />
+    <ClInclude Include="type_gml.CbooleanOrNilReason.h" />
+    <ClInclude Include="type_gml.CbooleanOrNilReasonList.h" />
+    <ClInclude Include="type_gml.CdoubleList.h" />
+    <ClInclude Include="type_gml.CdoubleOrNilReason.h" />
+    <ClInclude Include="type_gml.CdoubleOrNilReasonList.h" />
+    <ClInclude Include="type_gml.CintegerList.h" />
+    <ClInclude Include="type_gml.CintegerOrNilReason.h" />
+    <ClInclude Include="type_gml.CintegerOrNilReasonList.h" />
+    <ClInclude Include="type_gml.CstringOrNilReason.h" />
+    <ClInclude Include="type_gml.CbooleanOrNilReasonListType.h" />
+    <ClInclude Include="type_gml.CCountExtentTypeType.h" />
+    <ClInclude Include="type_gml.CintegerOrNilReasonListType.h" />
+    <ClInclude Include="type_gml.CNilReasonTypeType.h" />
+    <ClInclude Include="type_gml.CDecimalMinutesTypeType.h" />
+    <ClInclude Include="type_gml.CdoubleOrNilReasonListType.h" />
+    <ClInclude Include="type_gml.CintegerListType.h" />
+    <ClInclude Include="type_gml.CArcMinutesTypeType.h" />
+    <ClInclude Include="type_gml.CArcSecondsTypeType.h" />
+    <ClInclude Include="type_gml.CrowsType.h" />
+    <ClInclude Include="type_gml.CRowType.h" />
+    <ClInclude Include="type_gml.CNilReasonEnumerationType.h" />
+    <ClInclude Include="type_gml.CNilReasonEnumerationType2.h" />
+    <ClInclude Include="type_gml.CNameOrNilReasonListType.h" />
+    <ClInclude Include="type_gml.CrefLocationType.h" />
+    <ClInclude Include="type_gml.CNameListType.h" />
+    <ClInclude Include="type_gml.CDegreeValueTypeType.h" />
+    <ClInclude Include="type_gml.CdirectionType.h" />
+    <ClInclude Include="type_gml.CdoubleListType.h" />
+    <ClInclude Include="type_gml.CCompassPointEnumerationType.h" />
+    <ClInclude Include="type_gml.CNCNameListType.h" />
+    <ClInclude Include="type_gml.CrelativePositionType.h" />
+    <ClInclude Include="type_gml.CSequenceRuleEnumerationType.h" />
+    <ClInclude Include="type_gml.CCalDateType.h" />
+    <ClInclude Include="type_gml.CTimePositionUnionType.h" />
+    <ClInclude Include="type_gml.CTimeUnitTypeType.h" />
+    <ClInclude Include="type_gml.CTimeUnitTypeType2.h" />
+    <ClInclude Include="type_gml.CcontrolPointType.h" />
+    <ClInclude Include="type_.CCellSpaceBoundaryGeometryType.h" />
+    <ClInclude Include="type_.CCellSpaceBoundaryMemberType.h" />
+    <ClInclude Include="type_.CCellSpaceBoundaryPropertyType.h" />
+    <ClInclude Include="type_.CCellSpaceBoundaryType.h" />
+    <ClInclude Include="type_.CCellSpaceGeometryType.h" />
+    <ClInclude Include="type_.CCellSpaceMemberType.h" />
+    <ClInclude Include="type_.CCellSpacePropertyType.h" />
+    <ClInclude Include="type_.CCellSpaceType.h" />
+    <ClInclude Include="type_.CEdgesType.h" />
+    <ClInclude Include="type_.CExternalReferenceType.h" />
+    <ClInclude Include="type_.CIndoorFeaturesType.h" />
+    <ClInclude Include="type_.CInterEdgesType.h" />
+    <ClInclude Include="type_.CInterLayerConnectionMemberType.h" />
+    <ClInclude Include="type_.CInterLayerConnectionPropertyType.h" />
+    <ClInclude Include="type_.CInterLayerConnectionType.h" />
+    <ClInclude Include="type_.CMultiLayeredGraphPropertyType.h" />
+    <ClInclude Include="type_.CMultiLayeredGraphType.h" />
+    <ClInclude Include="type_.CNodesType.h" />
+    <ClInclude Include="type_.CPrimalSpaceFeaturesPropertyType.h" />
+    <ClInclude Include="type_.CPrimalSpaceFeaturesType.h" />
+    <ClInclude Include="type_.CSpaceLayerClassTypeType.h" />
+    <ClInclude Include="type_.CSpaceLayerMemberType.h" />
+    <ClInclude Include="type_.CSpaceLayerPropertyType.h" />
+    <ClInclude Include="type_.CSpaceLayerType.h" />
+    <ClInclude Include="type_.CSpaceLayersType.h" />
+    <ClInclude Include="type_.CStateMemberType.h" />
+    <ClInclude Include="type_.CStatePropertyType.h" />
+    <ClInclude Include="type_.CStateType.h" />
+    <ClInclude Include="type_.CTransitionMemberType.h" />
+    <ClInclude Include="type_.CTransitionPropertyType.h" />
+    <ClInclude Include="type_.CTransitionType.h" />
+    <ClInclude Include="type_.CexternalObjectReferenceType.h" />
+    <ClInclude Include="type_.CtypeOfTopoExpressionCodeEnumerationType.h" />
+    <ClInclude Include="type_.CtypeOfTopoExpressionCodeOtherType.h" />
+    <ClInclude Include="type_.CtypeOfTopoExpressionCodeType.h" />
+    <ClInclude Include="type_.Cindoorgmlcore.h" />
+    <ClInclude Include="type_.ClangType.h" />
+    <ClInclude Include="type_.ClangType2.h" />
+    <ClInclude Include="type_.CspaceType.h" />
+    <ClInclude Include="type_.CBooleanType.h" />
+    <ClInclude Include="type_.CCategoryType.h" />
+    <ClInclude Include="type_.CCountType.h" />
+    <ClInclude Include="type_.CQuantityType.h" />
+    <ClInclude Include="type_.CSecondDefiningParameterType.h" />
+    <ClInclude Include="type_.CcoordinateOperationAccuracyType.h" />
+    <ClInclude Include="type_.CdomainOfValidityType.h" />
+    <ClInclude Include="type_.CformulaCitationType.h" />
+    <ClInclude Include="type_.CsecondDefiningParameterType2.h" />
+    <ClInclude Include="type_.CtypeOfTopoExpressionCodeTypeType.h" />
+    <ClInclude Include="type_.CSpaceLayerClassTypeTypeType.h" />
+    <ClInclude Include="type_xlink.CactuateType.h" />
+    <ClInclude Include="type_xlink.CarcType.h" />
+    <ClInclude Include="type_xlink.CarcroleType.h" />
+    <ClInclude Include="type_xlink.Cextended.h" />
+    <ClInclude Include="type_xlink.CfromType.h" />
+    <ClInclude Include="type_xlink.ChrefType.h" />
+    <ClInclude Include="type_xlink.ClabelType.h" />
+    <ClInclude Include="type_xlink.ClocatorType.h" />
+    <ClInclude Include="type_xlink.CresourceType.h" />
+    <ClInclude Include="type_xlink.CroleType.h" />
+    <ClInclude Include="type_xlink.CshowType.h" />
+    <ClInclude Include="type_xlink.Csimple.h" />
+    <ClInclude Include="type_xlink.CtitleAttrType.h" />
+    <ClInclude Include="type_xlink.CtitleEltType.h" />
+    <ClInclude Include="type_xlink.CtoType.h" />
+    <ClInclude Include="type_xlink.CtypeType.h" />
+    <ClInclude Include="type_xs.CENTITIES.h" />
+    <ClInclude Include="type_xs.CENTITY.h" />
+    <ClInclude Include="type_xs.CID.h" />
+    <ClInclude Include="type_xs.CIDREF.h" />
+    <ClInclude Include="type_xs.CIDREFS.h" />
+    <ClInclude Include="type_xs.CNCName.h" />
+    <ClInclude Include="type_xs.CNMTOKEN.h" />
+    <ClInclude Include="type_xs.CNMTOKENS.h" />
+    <ClInclude Include="type_xs.CNOTATION.h" />
+    <ClInclude Include="type_xs.CName.h" />
+    <ClInclude Include="type_xs.CQName.h" />
+    <ClInclude Include="type_xs.CanySimpleType.h" />
+    <ClInclude Include="type_xs.CanyType.h" />
+    <ClInclude Include="type_xs.CanyURI.h" />
+    <ClInclude Include="type_xs.Cbase64Binary.h" />
+    <ClInclude Include="type_xs.Cboolean.h" />
+    <ClInclude Include="type_xs.Cbyte.h" />
+    <ClInclude Include="type_xs.Cdate.h" />
+    <ClInclude Include="type_xs.CdateTime.h" />
+    <ClInclude Include="type_xs.Cdecimal.h" />
+    <ClInclude Include="type_xs.Cdouble.h" />
+    <ClInclude Include="type_xs.Cduration.h" />
+    <ClInclude Include="type_xs.Cfloat.h" />
+    <ClInclude Include="type_xs.CgDay.h" />
+    <ClInclude Include="type_xs.CgMonth.h" />
+    <ClInclude Include="type_xs.CgMonthDay.h" />
+    <ClInclude Include="type_xs.CgYear.h" />
+    <ClInclude Include="type_xs.CgYearMonth.h" />
+    <ClInclude Include="type_xs.ChexBinary.h" />
+    <ClInclude Include="type_xs.Cint.h" />
+    <ClInclude Include="type_xs.Cinteger.h" />
+    <ClInclude Include="type_xs.Clanguage.h" />
+    <ClInclude Include="type_xs.Clong.h" />
+    <ClInclude Include="type_xs.CnegativeInteger.h" />
+    <ClInclude Include="type_xs.CnonNegativeInteger.h" />
+    <ClInclude Include="type_xs.CnonPositiveInteger.h" />
+    <ClInclude Include="type_xs.CnormalizedString.h" />
+    <ClInclude Include="type_xs.CpositiveInteger.h" />
+    <ClInclude Include="type_xs.Cshort.h" />
+    <ClInclude Include="type_xs.Cstring.h" />
+    <ClInclude Include="type_xs.Ctime.h" />
+    <ClInclude Include="type_xs.Ctoken.h" />
+    <ClInclude Include="type_xs.CunsignedByte.h" />
+    <ClInclude Include="type_xs.CunsignedInt.h" />
+    <ClInclude Include="type_xs.CunsignedLong.h" />
+    <ClInclude Include="type_xs.CunsignedShort.h" />
+    <ClInclude Include="type_xs.CbooleanType.h" />
+    <ClInclude Include="type_xs.CstringType.h" />
+    <ClInclude Include="type_xs.CdateTimeType.h" />
+    <ClInclude Include="type_xs.CdecimalType.h" />
+    <ClInclude Include="type_xs.CintegerType.h" />
+    <ClInclude Include="type_xs.CdoubleType.h" />
+    <ClInclude Include="type_xs.CanyURIType.h" />
+    <ClInclude Include="type_xs.CdurationType.h" />
+    <ClInclude Include="type_xs.CpositiveIntegerType.h" />
+    <ClInclude Include="type_xs.CnonNegativeIntegerType.h" />
+    <ClInclude Include="type_xs.CdateType.h" />
+    <ClInclude Include="type_xs.CtimeType.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="indoorgmlcore-typeinfo.cpp" />
+    <ClCompile Include="indoorgmlcore.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Altova\Altova.vcxproj">
+       <Project>{5CCDF85F-DC01-43BF-A2C2-ACB1BD6BEA42}</Project>
+	 </ProjectReference>
+    <ProjectReference Include="..\AltovaXML\AltovaXML.vcxproj">
+       <Project>{3E4146D4-2603-4873-B8AE-4B83B18ABE9F}</Project>
+	 </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
